@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52149BF85C2230D59C65E4D9 /* libPods-AirBallooon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DA4117475EAB3D4D4333B9 /* libPods-AirBallooon.a */; };
+		8D5065241B8DC60500BBD828 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5065231B8DC60500BBD828 /* main.m */; };
+		8D5065271B8DC60500BBD828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5065261B8DC60500BBD828 /* AppDelegate.m */; };
+		8D50652A1B8DC60500BBD828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5065291B8DC60500BBD828 /* ViewController.m */; };
+		8D50652D1B8DC60500BBD828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50652B1B8DC60500BBD828 /* Main.storyboard */; };
+		8D50652F1B8DC60500BBD828 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D50652E1B8DC60500BBD828 /* Images.xcassets */; };
+		8D5065321B8DC60500BBD828 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5065301B8DC60500BBD828 /* LaunchScreen.xib */; };
+		8D50653E1B8DC60500BBD828 /* AirBallooonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D50653D1B8DC60500BBD828 /* AirBallooonTests.m */; };
+		8D7EF2391B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2031B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.m */; };
+		8D7EF23A1B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2051B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.m */; };
+		8D7EF23B1B8DEF350032C565 /* DCHImageCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2071B8DEF350032C565 /* DCHImageCardCollectionViewCell.m */; };
+		8D7EF23C1B8DEF350032C565 /* DCHImageCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7EF2081B8DEF350032C565 /* DCHImageCardCollectionViewCell.xib */; };
+		8D7EF23D1B8DEF350032C565 /* DCHLinearGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF20A1B8DEF350032C565 /* DCHLinearGradientView.m */; };
+		8D7EF23E1B8DEF350032C565 /* UIView+DCHParallax.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF20C1B8DEF350032C565 /* UIView+DCHParallax.m */; };
+		8D7EF23F1B8DEF350032C565 /* DCHDribbbleShotListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF20F1B8DEF350032C565 /* DCHDribbbleShotListViewModel.m */; };
+		8D7EF2401B8DEF350032C565 /* DCHDribbbleShotViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2111B8DEF350032C565 /* DCHDribbbleShotViewModel.m */; };
+		8D7EF2411B8DEF350032C565 /* DCHDribbbleUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2131B8DEF350032C565 /* DCHDribbbleUserViewModel.m */; };
+		8D7EF2421B8DEF350032C565 /* DCHCommetUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2161B8DEF350032C565 /* DCHCommetUIModel.m */; };
+		8D7EF2431B8DEF350032C565 /* DCHShotImageUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2181B8DEF350032C565 /* DCHShotImageUIModel.m */; };
+		8D7EF2441B8DEF350032C565 /* DCHShotUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF21A1B8DEF350032C565 /* DCHShotUIModel.m */; };
+		8D7EF2451B8DEF350032C565 /* DCHTeamUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF21C1B8DEF350032C565 /* DCHTeamUIModel.m */; };
+		8D7EF2461B8DEF350032C565 /* DCHUserUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF21E1B8DEF350032C565 /* DCHUserUIModel.m */; };
+		8D7EF2471B8DEF350032C565 /* DCHDribbbleAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2211B8DEF350032C565 /* DCHDribbbleAPIHelper.m */; };
+		8D7EF2481B8DEF350032C565 /* DCHDribbbleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2231B8DEF350032C565 /* DCHDribbbleRequest.m */; };
+		8D7EF2491B8DEF350032C565 /* DCHJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2251B8DEF350032C565 /* DCHJSONResponseSerializer.m */; };
+		8D7EF24A1B8DEF350032C565 /* DCHDribbbleCommentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2281B8DEF350032C565 /* DCHDribbbleCommentListModel.m */; };
+		8D7EF24B1B8DEF350032C565 /* DCHDribbbleCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF22A1B8DEF350032C565 /* DCHDribbbleCommentModel.m */; };
+		8D7EF24C1B8DEF350032C565 /* DCHDribbbleShotImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF22C1B8DEF350032C565 /* DCHDribbbleShotImagesModel.m */; };
+		8D7EF24D1B8DEF350032C565 /* DCHDribbbleShotListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF22E1B8DEF350032C565 /* DCHDribbbleShotListModel.m */; };
+		8D7EF24E1B8DEF350032C565 /* DCHDribbbleShotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2301B8DEF350032C565 /* DCHDribbbleShotModel.m */; };
+		8D7EF24F1B8DEF350032C565 /* DCHDribbbleTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2321B8DEF350032C565 /* DCHDribbbleTeamModel.m */; };
+		8D7EF2501B8DEF350032C565 /* DCHDribbbleUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2341B8DEF350032C565 /* DCHDribbbleUserModel.m */; };
+		8D7EF2511B8DEF350032C565 /* DCHOptionalJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2361B8DEF350032C565 /* DCHOptionalJSONModel.m */; };
+		8D7EF2521B8DEF350032C565 /* DCHDribbbleError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7EF2381B8DEF350032C565 /* DCHDribbbleError.m */; };
+		8D7EF2541B8DEF8D0032C565 /* AirBalloon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D7EF2531B8DEF8D0032C565 /* AirBalloon.gif */; };
+		D524DBF7C950A8B67C4DA982 /* libPods-AirBallooonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C264677D5E68F6C6307E95 /* libPods-AirBallooonTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D5065381B8DC60500BBD828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D5065161B8DC60500BBD828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D50651D1B8DC60500BBD828;
+			remoteInfo = AirBallooon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47557699DA3552966E7CFA1C /* Pods-AirBallooonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBallooonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirBallooonTests/Pods-AirBallooonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80E3193BE728251B62B7F232 /* Pods-AirBallooon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBallooon.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirBallooon/Pods-AirBallooon.release.xcconfig"; sourceTree = "<group>"; };
+		8D50651E1B8DC60500BBD828 /* AirBallooon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBallooon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5065221B8DC60500BBD828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5065231B8DC60500BBD828 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D5065251B8DC60500BBD828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D5065261B8DC60500BBD828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D5065281B8DC60500BBD828 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8D5065291B8DC60500BBD828 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8D50652C1B8DC60500BBD828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D50652E1B8DC60500BBD828 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8D5065311B8DC60500BBD828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8D5065371B8DC60500BBD828 /* AirBallooonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirBallooonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D50653C1B8DC60500BBD828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D50653D1B8DC60500BBD828 /* AirBallooonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirBallooonTests.m; sourceTree = "<group>"; };
+		8D7EF2021B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotCollectionViewCell.h; sourceTree = "<group>"; };
+		8D7EF2031B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotCollectionViewCell.m; sourceTree = "<group>"; };
+		8D7EF2041B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotCollectionViewController.h; sourceTree = "<group>"; };
+		8D7EF2051B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotCollectionViewController.m; sourceTree = "<group>"; };
+		8D7EF2061B8DEF350032C565 /* DCHImageCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHImageCardCollectionViewCell.h; sourceTree = "<group>"; };
+		8D7EF2071B8DEF350032C565 /* DCHImageCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHImageCardCollectionViewCell.m; sourceTree = "<group>"; };
+		8D7EF2081B8DEF350032C565 /* DCHImageCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCHImageCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		8D7EF2091B8DEF350032C565 /* DCHLinearGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHLinearGradientView.h; sourceTree = "<group>"; };
+		8D7EF20A1B8DEF350032C565 /* DCHLinearGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHLinearGradientView.m; sourceTree = "<group>"; };
+		8D7EF20B1B8DEF350032C565 /* UIView+DCHParallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCHParallax.h"; sourceTree = "<group>"; };
+		8D7EF20C1B8DEF350032C565 /* UIView+DCHParallax.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCHParallax.m"; sourceTree = "<group>"; };
+		8D7EF20E1B8DEF350032C565 /* DCHDribbbleShotListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotListViewModel.h; sourceTree = "<group>"; };
+		8D7EF20F1B8DEF350032C565 /* DCHDribbbleShotListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotListViewModel.m; sourceTree = "<group>"; };
+		8D7EF2101B8DEF350032C565 /* DCHDribbbleShotViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotViewModel.h; sourceTree = "<group>"; };
+		8D7EF2111B8DEF350032C565 /* DCHDribbbleShotViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotViewModel.m; sourceTree = "<group>"; };
+		8D7EF2121B8DEF350032C565 /* DCHDribbbleUserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleUserViewModel.h; sourceTree = "<group>"; };
+		8D7EF2131B8DEF350032C565 /* DCHDribbbleUserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleUserViewModel.m; sourceTree = "<group>"; };
+		8D7EF2151B8DEF350032C565 /* DCHCommetUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHCommetUIModel.h; sourceTree = "<group>"; };
+		8D7EF2161B8DEF350032C565 /* DCHCommetUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHCommetUIModel.m; sourceTree = "<group>"; };
+		8D7EF2171B8DEF350032C565 /* DCHShotImageUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHShotImageUIModel.h; sourceTree = "<group>"; };
+		8D7EF2181B8DEF350032C565 /* DCHShotImageUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHShotImageUIModel.m; sourceTree = "<group>"; };
+		8D7EF2191B8DEF350032C565 /* DCHShotUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHShotUIModel.h; sourceTree = "<group>"; };
+		8D7EF21A1B8DEF350032C565 /* DCHShotUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHShotUIModel.m; sourceTree = "<group>"; };
+		8D7EF21B1B8DEF350032C565 /* DCHTeamUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHTeamUIModel.h; sourceTree = "<group>"; };
+		8D7EF21C1B8DEF350032C565 /* DCHTeamUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHTeamUIModel.m; sourceTree = "<group>"; };
+		8D7EF21D1B8DEF350032C565 /* DCHUserUIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHUserUIModel.h; sourceTree = "<group>"; };
+		8D7EF21E1B8DEF350032C565 /* DCHUserUIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHUserUIModel.m; sourceTree = "<group>"; };
+		8D7EF2201B8DEF350032C565 /* DCHDribbbleAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleAPIHelper.h; sourceTree = "<group>"; };
+		8D7EF2211B8DEF350032C565 /* DCHDribbbleAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleAPIHelper.m; sourceTree = "<group>"; };
+		8D7EF2221B8DEF350032C565 /* DCHDribbbleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleRequest.h; sourceTree = "<group>"; };
+		8D7EF2231B8DEF350032C565 /* DCHDribbbleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleRequest.m; sourceTree = "<group>"; };
+		8D7EF2241B8DEF350032C565 /* DCHJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHJSONResponseSerializer.h; sourceTree = "<group>"; };
+		8D7EF2251B8DEF350032C565 /* DCHJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHJSONResponseSerializer.m; sourceTree = "<group>"; };
+		8D7EF2271B8DEF350032C565 /* DCHDribbbleCommentListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleCommentListModel.h; sourceTree = "<group>"; };
+		8D7EF2281B8DEF350032C565 /* DCHDribbbleCommentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleCommentListModel.m; sourceTree = "<group>"; };
+		8D7EF2291B8DEF350032C565 /* DCHDribbbleCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleCommentModel.h; sourceTree = "<group>"; };
+		8D7EF22A1B8DEF350032C565 /* DCHDribbbleCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleCommentModel.m; sourceTree = "<group>"; };
+		8D7EF22B1B8DEF350032C565 /* DCHDribbbleShotImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotImagesModel.h; sourceTree = "<group>"; };
+		8D7EF22C1B8DEF350032C565 /* DCHDribbbleShotImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotImagesModel.m; sourceTree = "<group>"; };
+		8D7EF22D1B8DEF350032C565 /* DCHDribbbleShotListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotListModel.h; sourceTree = "<group>"; };
+		8D7EF22E1B8DEF350032C565 /* DCHDribbbleShotListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotListModel.m; sourceTree = "<group>"; };
+		8D7EF22F1B8DEF350032C565 /* DCHDribbbleShotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleShotModel.h; sourceTree = "<group>"; };
+		8D7EF2301B8DEF350032C565 /* DCHDribbbleShotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleShotModel.m; sourceTree = "<group>"; };
+		8D7EF2311B8DEF350032C565 /* DCHDribbbleTeamModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleTeamModel.h; sourceTree = "<group>"; };
+		8D7EF2321B8DEF350032C565 /* DCHDribbbleTeamModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleTeamModel.m; sourceTree = "<group>"; };
+		8D7EF2331B8DEF350032C565 /* DCHDribbbleUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleUserModel.h; sourceTree = "<group>"; };
+		8D7EF2341B8DEF350032C565 /* DCHDribbbleUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleUserModel.m; sourceTree = "<group>"; };
+		8D7EF2351B8DEF350032C565 /* DCHOptionalJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHOptionalJSONModel.h; sourceTree = "<group>"; };
+		8D7EF2361B8DEF350032C565 /* DCHOptionalJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHOptionalJSONModel.m; sourceTree = "<group>"; };
+		8D7EF2371B8DEF350032C565 /* DCHDribbbleError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCHDribbbleError.h; sourceTree = "<group>"; };
+		8D7EF2381B8DEF350032C565 /* DCHDribbbleError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCHDribbbleError.m; sourceTree = "<group>"; };
+		8D7EF2531B8DEF8D0032C565 /* AirBalloon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AirBalloon.gif; sourceTree = "<group>"; };
+		CCC16EF4B52923F3874FE1B3 /* Pods-AirBallooonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBallooonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirBallooonTests/Pods-AirBallooonTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD2C9DA936E0C3E7BC9CD1E0 /* Pods-AirBallooon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBallooon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirBallooon/Pods-AirBallooon.debug.xcconfig"; sourceTree = "<group>"; };
+		F5C264677D5E68F6C6307E95 /* libPods-AirBallooonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirBallooonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DA4117475EAB3D4D4333B9 /* libPods-AirBallooon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirBallooon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D50651B1B8DC60500BBD828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52149BF85C2230D59C65E4D9 /* libPods-AirBallooon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5065341B8DC60500BBD828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D524DBF7C950A8B67C4DA982 /* libPods-AirBallooonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0089A741F62D90A22B96CECA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD2C9DA936E0C3E7BC9CD1E0 /* Pods-AirBallooon.debug.xcconfig */,
+				80E3193BE728251B62B7F232 /* Pods-AirBallooon.release.xcconfig */,
+				47557699DA3552966E7CFA1C /* Pods-AirBallooonTests.debug.xcconfig */,
+				CCC16EF4B52923F3874FE1B3 /* Pods-AirBallooonTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D5065151B8DC60500BBD828 = {
+			isa = PBXGroup;
+			children = (
+				8D5065201B8DC60500BBD828 /* AirBallooon */,
+				8D50653A1B8DC60500BBD828 /* AirBallooonTests */,
+				8D50651F1B8DC60500BBD828 /* Products */,
+				0089A741F62D90A22B96CECA /* Pods */,
+				F87658456EDCD5D9DEC4D371 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D50651F1B8DC60500BBD828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D50651E1B8DC60500BBD828 /* AirBallooon.app */,
+				8D5065371B8DC60500BBD828 /* AirBallooonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D5065201B8DC60500BBD828 /* AirBallooon */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF2531B8DEF8D0032C565 /* AirBalloon.gif */,
+				8D7EF2011B8DEF350032C565 /* View */,
+				8D7EF20D1B8DEF350032C565 /* ViewModel */,
+				8D7EF21F1B8DEF350032C565 /* Network */,
+				8D7EF2261B8DEF350032C565 /* Model */,
+				8D7EF2371B8DEF350032C565 /* DCHDribbbleError.h */,
+				8D7EF2381B8DEF350032C565 /* DCHDribbbleError.m */,
+				8D5065251B8DC60500BBD828 /* AppDelegate.h */,
+				8D5065261B8DC60500BBD828 /* AppDelegate.m */,
+				8D5065281B8DC60500BBD828 /* ViewController.h */,
+				8D5065291B8DC60500BBD828 /* ViewController.m */,
+				8D50652B1B8DC60500BBD828 /* Main.storyboard */,
+				8D50652E1B8DC60500BBD828 /* Images.xcassets */,
+				8D5065301B8DC60500BBD828 /* LaunchScreen.xib */,
+				8D5065211B8DC60500BBD828 /* Supporting Files */,
+			);
+			path = AirBallooon;
+			sourceTree = "<group>";
+		};
+		8D5065211B8DC60500BBD828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D5065221B8DC60500BBD828 /* Info.plist */,
+				8D5065231B8DC60500BBD828 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D50653A1B8DC60500BBD828 /* AirBallooonTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D50653D1B8DC60500BBD828 /* AirBallooonTests.m */,
+				8D50653B1B8DC60500BBD828 /* Supporting Files */,
+			);
+			path = AirBallooonTests;
+			sourceTree = "<group>";
+		};
+		8D50653B1B8DC60500BBD828 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D50653C1B8DC60500BBD828 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D7EF2011B8DEF350032C565 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF2021B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.h */,
+				8D7EF2031B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.m */,
+				8D7EF2041B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.h */,
+				8D7EF2051B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.m */,
+				8D7EF2061B8DEF350032C565 /* DCHImageCardCollectionViewCell.h */,
+				8D7EF2071B8DEF350032C565 /* DCHImageCardCollectionViewCell.m */,
+				8D7EF2081B8DEF350032C565 /* DCHImageCardCollectionViewCell.xib */,
+				8D7EF2091B8DEF350032C565 /* DCHLinearGradientView.h */,
+				8D7EF20A1B8DEF350032C565 /* DCHLinearGradientView.m */,
+				8D7EF20B1B8DEF350032C565 /* UIView+DCHParallax.h */,
+				8D7EF20C1B8DEF350032C565 /* UIView+DCHParallax.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D7EF20D1B8DEF350032C565 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF20E1B8DEF350032C565 /* DCHDribbbleShotListViewModel.h */,
+				8D7EF20F1B8DEF350032C565 /* DCHDribbbleShotListViewModel.m */,
+				8D7EF2101B8DEF350032C565 /* DCHDribbbleShotViewModel.h */,
+				8D7EF2111B8DEF350032C565 /* DCHDribbbleShotViewModel.m */,
+				8D7EF2121B8DEF350032C565 /* DCHDribbbleUserViewModel.h */,
+				8D7EF2131B8DEF350032C565 /* DCHDribbbleUserViewModel.m */,
+				8D7EF2141B8DEF350032C565 /* UIModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D7EF2141B8DEF350032C565 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF2151B8DEF350032C565 /* DCHCommetUIModel.h */,
+				8D7EF2161B8DEF350032C565 /* DCHCommetUIModel.m */,
+				8D7EF2171B8DEF350032C565 /* DCHShotImageUIModel.h */,
+				8D7EF2181B8DEF350032C565 /* DCHShotImageUIModel.m */,
+				8D7EF2191B8DEF350032C565 /* DCHShotUIModel.h */,
+				8D7EF21A1B8DEF350032C565 /* DCHShotUIModel.m */,
+				8D7EF21B1B8DEF350032C565 /* DCHTeamUIModel.h */,
+				8D7EF21C1B8DEF350032C565 /* DCHTeamUIModel.m */,
+				8D7EF21D1B8DEF350032C565 /* DCHUserUIModel.h */,
+				8D7EF21E1B8DEF350032C565 /* DCHUserUIModel.m */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		8D7EF21F1B8DEF350032C565 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF2201B8DEF350032C565 /* DCHDribbbleAPIHelper.h */,
+				8D7EF2211B8DEF350032C565 /* DCHDribbbleAPIHelper.m */,
+				8D7EF2221B8DEF350032C565 /* DCHDribbbleRequest.h */,
+				8D7EF2231B8DEF350032C565 /* DCHDribbbleRequest.m */,
+				8D7EF2241B8DEF350032C565 /* DCHJSONResponseSerializer.h */,
+				8D7EF2251B8DEF350032C565 /* DCHJSONResponseSerializer.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8D7EF2261B8DEF350032C565 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D7EF2271B8DEF350032C565 /* DCHDribbbleCommentListModel.h */,
+				8D7EF2281B8DEF350032C565 /* DCHDribbbleCommentListModel.m */,
+				8D7EF2291B8DEF350032C565 /* DCHDribbbleCommentModel.h */,
+				8D7EF22A1B8DEF350032C565 /* DCHDribbbleCommentModel.m */,
+				8D7EF22B1B8DEF350032C565 /* DCHDribbbleShotImagesModel.h */,
+				8D7EF22C1B8DEF350032C565 /* DCHDribbbleShotImagesModel.m */,
+				8D7EF22D1B8DEF350032C565 /* DCHDribbbleShotListModel.h */,
+				8D7EF22E1B8DEF350032C565 /* DCHDribbbleShotListModel.m */,
+				8D7EF22F1B8DEF350032C565 /* DCHDribbbleShotModel.h */,
+				8D7EF2301B8DEF350032C565 /* DCHDribbbleShotModel.m */,
+				8D7EF2311B8DEF350032C565 /* DCHDribbbleTeamModel.h */,
+				8D7EF2321B8DEF350032C565 /* DCHDribbbleTeamModel.m */,
+				8D7EF2331B8DEF350032C565 /* DCHDribbbleUserModel.h */,
+				8D7EF2341B8DEF350032C565 /* DCHDribbbleUserModel.m */,
+				8D7EF2351B8DEF350032C565 /* DCHOptionalJSONModel.h */,
+				8D7EF2361B8DEF350032C565 /* DCHOptionalJSONModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F87658456EDCD5D9DEC4D371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5DA4117475EAB3D4D4333B9 /* libPods-AirBallooon.a */,
+				F5C264677D5E68F6C6307E95 /* libPods-AirBallooonTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D50651D1B8DC60500BBD828 /* AirBallooon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5065411B8DC60500BBD828 /* Build configuration list for PBXNativeTarget "AirBallooon" */;
+			buildPhases = (
+				80B7E00081EDE15BC8A802D2 /* Check Pods Manifest.lock */,
+				8D50651A1B8DC60500BBD828 /* Sources */,
+				8D50651B1B8DC60500BBD828 /* Frameworks */,
+				8D50651C1B8DC60500BBD828 /* Resources */,
+				746FFFFA4A2E3DE6BBAC523F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBallooon;
+			productName = AirBallooon;
+			productReference = 8D50651E1B8DC60500BBD828 /* AirBallooon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D5065361B8DC60500BBD828 /* AirBallooonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5065441B8DC60500BBD828 /* Build configuration list for PBXNativeTarget "AirBallooonTests" */;
+			buildPhases = (
+				593F58A0F184D355869700B7 /* Check Pods Manifest.lock */,
+				8D5065331B8DC60500BBD828 /* Sources */,
+				8D5065341B8DC60500BBD828 /* Frameworks */,
+				8D5065351B8DC60500BBD828 /* Resources */,
+				D1F2F88BDE298DE55CBF7D79 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D5065391B8DC60500BBD828 /* PBXTargetDependency */,
+			);
+			name = AirBallooonTests;
+			productName = AirBallooonTests;
+			productReference = 8D5065371B8DC60500BBD828 /* AirBallooonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D5065161B8DC60500BBD828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = CHEN;
+				TargetAttributes = {
+					8D50651D1B8DC60500BBD828 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8D5065361B8DC60500BBD828 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8D50651D1B8DC60500BBD828;
+					};
+				};
+			};
+			buildConfigurationList = 8D5065191B8DC60500BBD828 /* Build configuration list for PBXProject "AirBallooon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D5065151B8DC60500BBD828;
+			productRefGroup = 8D50651F1B8DC60500BBD828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D50651D1B8DC60500BBD828 /* AirBallooon */,
+				8D5065361B8DC60500BBD828 /* AirBallooonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D50651C1B8DC60500BBD828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D50652D1B8DC60500BBD828 /* Main.storyboard in Resources */,
+				8D5065321B8DC60500BBD828 /* LaunchScreen.xib in Resources */,
+				8D7EF23C1B8DEF350032C565 /* DCHImageCardCollectionViewCell.xib in Resources */,
+				8D7EF2541B8DEF8D0032C565 /* AirBalloon.gif in Resources */,
+				8D50652F1B8DC60500BBD828 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5065351B8DC60500BBD828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		593F58A0F184D355869700B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		746FFFFA4A2E3DE6BBAC523F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirBallooon/Pods-AirBallooon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B7E00081EDE15BC8A802D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F2F88BDE298DE55CBF7D79 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirBallooonTests/Pods-AirBallooonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D50651A1B8DC60500BBD828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7EF2411B8DEF350032C565 /* DCHDribbbleUserViewModel.m in Sources */,
+				8D7EF24A1B8DEF350032C565 /* DCHDribbbleCommentListModel.m in Sources */,
+				8D7EF2391B8DEF350032C565 /* DCHDribbbleShotCollectionViewCell.m in Sources */,
+				8D7EF24B1B8DEF350032C565 /* DCHDribbbleCommentModel.m in Sources */,
+				8D7EF2491B8DEF350032C565 /* DCHJSONResponseSerializer.m in Sources */,
+				8D7EF2431B8DEF350032C565 /* DCHShotImageUIModel.m in Sources */,
+				8D7EF2441B8DEF350032C565 /* DCHShotUIModel.m in Sources */,
+				8D7EF23A1B8DEF350032C565 /* DCHDribbbleShotCollectionViewController.m in Sources */,
+				8D7EF2451B8DEF350032C565 /* DCHTeamUIModel.m in Sources */,
+				8D7EF24D1B8DEF350032C565 /* DCHDribbbleShotListModel.m in Sources */,
+				8D7EF24F1B8DEF350032C565 /* DCHDribbbleTeamModel.m in Sources */,
+				8D7EF2471B8DEF350032C565 /* DCHDribbbleAPIHelper.m in Sources */,
+				8D7EF23B1B8DEF350032C565 /* DCHImageCardCollectionViewCell.m in Sources */,
+				8D50652A1B8DC60500BBD828 /* ViewController.m in Sources */,
+				8D7EF2461B8DEF350032C565 /* DCHUserUIModel.m in Sources */,
+				8D7EF24C1B8DEF350032C565 /* DCHDribbbleShotImagesModel.m in Sources */,
+				8D7EF23F1B8DEF350032C565 /* DCHDribbbleShotListViewModel.m in Sources */,
+				8D7EF23D1B8DEF350032C565 /* DCHLinearGradientView.m in Sources */,
+				8D5065271B8DC60500BBD828 /* AppDelegate.m in Sources */,
+				8D7EF2421B8DEF350032C565 /* DCHCommetUIModel.m in Sources */,
+				8D7EF2511B8DEF350032C565 /* DCHOptionalJSONModel.m in Sources */,
+				8D5065241B8DC60500BBD828 /* main.m in Sources */,
+				8D7EF2401B8DEF350032C565 /* DCHDribbbleShotViewModel.m in Sources */,
+				8D7EF24E1B8DEF350032C565 /* DCHDribbbleShotModel.m in Sources */,
+				8D7EF2521B8DEF350032C565 /* DCHDribbbleError.m in Sources */,
+				8D7EF23E1B8DEF350032C565 /* UIView+DCHParallax.m in Sources */,
+				8D7EF2501B8DEF350032C565 /* DCHDribbbleUserModel.m in Sources */,
+				8D7EF2481B8DEF350032C565 /* DCHDribbbleRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5065331B8DC60500BBD828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D50653E1B8DC60500BBD828 /* AirBallooonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D5065391B8DC60500BBD828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D50651D1B8DC60500BBD828 /* AirBallooon */;
+			targetProxy = 8D5065381B8DC60500BBD828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D50652B1B8DC60500BBD828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D50652C1B8DC60500BBD828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D5065301B8DC60500BBD828 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5065311B8DC60500BBD828 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D50653F1B8DC60500BBD828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8D5065401B8DC60500BBD828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D5065421B8DC60500BBD828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2C9DA936E0C3E7BC9CD1E0 /* Pods-AirBallooon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AirBallooon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D5065431B8DC60500BBD828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E3193BE728251B62B7F232 /* Pods-AirBallooon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AirBallooon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8D5065451B8DC60500BBD828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47557699DA3552966E7CFA1C /* Pods-AirBallooonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AirBallooonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBallooon.app/AirBallooon";
+			};
+			name = Debug;
+		};
+		8D5065461B8DC60500BBD828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC16EF4B52923F3874FE1B3 /* Pods-AirBallooonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AirBallooonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirBallooon.app/AirBallooon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D5065191B8DC60500BBD828 /* Build configuration list for PBXProject "AirBallooon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D50653F1B8DC60500BBD828 /* Debug */,
+				8D5065401B8DC60500BBD828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5065411B8DC60500BBD828 /* Build configuration list for PBXNativeTarget "AirBallooon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5065421B8DC60500BBD828 /* Debug */,
+				8D5065431B8DC60500BBD828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5065441B8DC60500BBD828 /* Build configuration list for PBXNativeTarget "AirBallooonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5065451B8DC60500BBD828 /* Debug */,
+				8D5065461B8DC60500BBD828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D5065161B8DC60500BBD828 /* Project object */;
+}
