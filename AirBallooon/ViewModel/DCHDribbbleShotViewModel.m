@@ -46,21 +46,23 @@
 
 - (void)setupCommands {
     do {
-        self.getOneShotCmd = [[DCHMVVMCommand alloc] initWithOperation:^(NSDictionary *buildinParams, NSArray *inputParams, DCHMVVMCommandCompletion completion) {
+        self.getOneShotCmd = [[DCHMVVMCommand alloc] initWithOperation:^id(NSDictionary *buildinParams, NSDictionary *inputParams, DCHMVVMCommandCompletion completion) {
+            id result = nil;
             do {
                 if (DCH_IsEmpty(inputParams)) {
                     break;
                 }
-                DCHDribbbleGetOneShotRequest *getOneShotReq = [inputParams dch_safe_objectAtIndex:0];
+                DCHDribbbleGetOneShotRequest *getOneShotReq = [inputParams dch_safe_objectForKey:str_DCHDribbbleGetOneShotRequest];
                 if (DCH_IsEmpty(getOneShotReq)) {
                     break;
                 }
-                [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] getOneShot:getOneShotReq withCompletion:^(id content, NSError *error) {
+                result = [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] getOneShot:getOneShotReq withCompletion:^(id content, NSError *error) {
                     if (completion) {
                         completion(content, error);
                     }
                 }];
             } while (NO);
+            return result;
         } callback:^(DCHMVVMCommand *command, DCHMVVMCommandResult *result) {
             do {
                 DCHDribbbleShotModel *shotModel = result.content;
@@ -69,23 +71,35 @@
                 }
                 self.shotUIModel = [[DCHShotUIModel alloc] initWithShotModel:shotModel];
             } while (NO);
+        } cancelation:^(id storeContent) {
+            do {
+                if (DCH_IsEmpty(storeContent)) {
+                    break;
+                }
+                if ([storeContent isKindOfClass:[NSURLSessionTask class]]) {
+                    NSURLSessionTask *task = (NSURLSessionTask *)storeContent;
+                    [task cancel];
+                }
+            } while (NO);
         }];
         
-        self.listCommentsForOneShotCmd = [[DCHMVVMCommand alloc] initWithOperation:^(NSDictionary *buildinParams, NSArray *inputParams, DCHMVVMCommandCompletion completion) {
+        self.listCommentsForOneShotCmd = [[DCHMVVMCommand alloc] initWithOperation:^id(NSDictionary *buildinParams, NSDictionary *inputParams, DCHMVVMCommandCompletion completion) {
+            id result = nil;
             do {
                 if (DCH_IsEmpty(inputParams)) {
                     break;
                 }
-                DCHDribbbleListCommentsForOneShotRequest *listCommentsForOneShotReq = [inputParams dch_safe_objectAtIndex:0];
+                DCHDribbbleListCommentsForOneShotRequest *listCommentsForOneShotReq = [inputParams dch_safe_objectForKey:str_DCHDribbbleListCommentsForOneShotRequest];
                 if (DCH_IsEmpty(listCommentsForOneShotReq)) {
                     break;
                 }
-                [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] listCommentsForOneShot:listCommentsForOneShotReq withCompletion:^(id content, NSError *error) {
+                result = [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] listCommentsForOneShot:listCommentsForOneShotReq withCompletion:^(id content, NSError *error) {
                     if (completion) {
                         completion(content, error);
                     }
                 }];
             } while (NO);
+            return result;
         } callback:^(DCHMVVMCommand *command, DCHMVVMCommandResult *result) {
             do {
                 DCHDribbbleCommentListModel *commentListModel = result.content;
@@ -98,6 +112,16 @@
                     [tmpAry dch_safe_addObject:commentUIModel];
                 }
                 self.commentList = tmpAry;
+            } while (NO);
+        } cancelation:^(id storeContent) {
+            do {
+                if (DCH_IsEmpty(storeContent)) {
+                    break;
+                }
+                if ([storeContent isKindOfClass:[NSURLSessionTask class]]) {
+                    NSURLSessionTask *task = (NSURLSessionTask *)storeContent;
+                    [task cancel];
+                }
             } while (NO);
         }];
     } while (NO);

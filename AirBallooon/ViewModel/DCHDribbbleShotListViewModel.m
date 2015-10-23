@@ -31,21 +31,23 @@
 
 - (void)setupCommands {
     do {
-        self.listShotsCmd = [[DCHMVVMCommand alloc] initWithOperation:^(NSDictionary *buildinParams, NSArray *inputParams, DCHMVVMCommandCompletion completion) {
+        self.listShotsCmd = [[DCHMVVMCommand alloc] initWithOperation:^id(NSDictionary *buildinParams, NSDictionary *inputParams, DCHMVVMCommandCompletion completion) {
+            id result = nil;
             do {
                 if (DCH_IsEmpty(inputParams)) {
                     break;
                 }
-                DCHDribbbleListShotsRequest *listShotsReq = [inputParams dch_safe_objectAtIndex:0];
+                DCHDribbbleListShotsRequest *listShotsReq = [inputParams dch_safe_objectForKey:str_DCHDribbbleListShotsRequest];
                 if (DCH_IsEmpty(listShotsReq)) {
                     break;
                 }
-                [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] listShots:listShotsReq withCompletion:^(id content, NSError *error) {
+                result = [[DCHDribbbleAPIHelper sharedDCHDribbbleAPIHelper] listShots:listShotsReq withCompletion:^(id content, NSError *error) {
                     if (completion) {
                         completion(content, error);
                     }
                 }];
             } while (NO);
+            return result;
         } callback:^(DCHMVVMCommand *command, DCHMVVMCommandResult *result) {
             do {
                 DCHDribbbleShotListModel *listModel = result.content;
@@ -58,6 +60,16 @@
                     [tmpAry dch_safe_addObject:shotUIModel];
                 }
                 self.shotList = tmpAry;
+            } while (NO);
+        } cancelation:^(id storeContent) {
+            do {
+                if (DCH_IsEmpty(storeContent)) {
+                    break;
+                }
+                if ([storeContent isKindOfClass:[NSURLSessionTask class]]) {
+                    NSURLSessionTask *task = (NSURLSessionTask *)storeContent;
+                    [task cancel];
+                }
             } while (NO);
         }];
     } while (NO);

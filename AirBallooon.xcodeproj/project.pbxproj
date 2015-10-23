@@ -334,6 +334,7 @@
 				8D50651B1B8DC60500BBD828 /* Frameworks */,
 				8D50651C1B8DC60500BBD828 /* Resources */,
 				746FFFFA4A2E3DE6BBAC523F /* Copy Pods Resources */,
+				BBBD15FF46C884E148C04F79 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +354,7 @@
 				8D5065341B8DC60500BBD828 /* Frameworks */,
 				8D5065351B8DC60500BBD828 /* Resources */,
 				D1F2F88BDE298DE55CBF7D79 /* Copy Pods Resources */,
+				2C13BBB48B7CA76F89FD984D /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,6 +426,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C13BBB48B7CA76F89FD984D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirBallooonTests/Pods-AirBallooonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		593F58A0F184D355869700B7 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +484,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBBD15FF46C884E148C04F79 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirBallooon/Pods-AirBallooon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1F2F88BDE298DE55CBF7D79 /* Copy Pods Resources */ = {

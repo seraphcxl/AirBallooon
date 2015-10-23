@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5E6C5BE97B673F70536719AA4285BBEAE881BA6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D74EFDFD882244BA205B4A49C7036000255D9B6C" : 0,
+    "A5E04BA589A77AE937B1EF86EE1CD032F9CB6860" : 0,
+    "5E6C5BE97B673F70536719AA4285BBEAE881BA6B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9EA5F1DB-3A98-4B79-AB5A-0BD0793DFD1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D74EFDFD882244BA205B4A49C7036000255D9B6C" : "DCHMVVMKit\/",
+    "A5E04BA589A77AE937B1EF86EE1CD032F9CB6860" : "DCHImageTurbo\/",
+    "5E6C5BE97B673F70536719AA4285BBEAE881BA6B" : "AirBallooon\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AirBallooon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AirBallooon.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/seraphcxl\/AirBallooon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E6C5BE97B673F70536719AA4285BBEAE881BA6B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/seraphcxl\/DCHImageTurbo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5E04BA589A77AE937B1EF86EE1CD032F9CB6860"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/seraphcxl\/DCHMVVMKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D74EFDFD882244BA205B4A49C7036000255D9B6C"
+    }
+  ]
+}

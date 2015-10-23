@@ -17,6 +17,7 @@
 
 @end
 
+extern NSString * const str_DCHDribbbleListShotsRequest;
 
 @interface DCHDribbbleListShotsRequest : DCHDribbbleRequest
 
@@ -29,11 +30,15 @@
 
 @end
 
+extern NSString * const str_DCHDribbbleGetOneShotRequest;
+
 @interface DCHDribbbleGetOneShotRequest : DCHDribbbleRequest
 
 @property (nonatomic, assign) NSInteger id;
 
 @end
+
+extern NSString * const str_DCHDribbbleListCommentsForOneShotRequest;
 
 @interface DCHDribbbleListCommentsForOneShotRequest : DCHDribbbleRequest
 

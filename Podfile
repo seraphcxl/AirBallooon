@@ -20,7 +20,7 @@ pod 'CHTCollectionViewWaterfallLayout', '~> 0.9.1'
 pod 'Shimmer', '~> 1.0.2'
 pod 'REMenu', '~> 1.10'
 pod 'RRFPSBar', '~> 0.0.1'
-pod 'AFNetworking', '~> 2.5.0’
+pod 'AFNetworking', '~> 3.0.0-beta.1'
 pod 'JSONModel', '~> 1.1.0'
 pod 'AutoCoding', '~> 2.2.1'
 pod 'MBProgressHUD', '~> 0.9.1'

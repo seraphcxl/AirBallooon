@@ -47,6 +47,8 @@
 
 @end
 
+NSString * const str_DCHDribbbleListShotsRequest = @"str_DCHDribbbleListShotsRequest";
+
 @implementation DCHDribbbleListShotsRequest
 
 - (instancetype)init {
@@ -59,6 +61,8 @@
 
 @end
 
+NSString * const str_DCHDribbbleGetOneShotRequest = @"str_DCHDribbbleGetOneShotRequest";
+
 @implementation DCHDribbbleGetOneShotRequest
 
 - (instancetype)init {
@@ -70,6 +74,8 @@
 }
 
 @end
+
+NSString * const str_DCHDribbbleListCommentsForOneShotRequest = @"str_DCHDribbbleListCommentsForOneShotRequest";
 
 @implementation DCHDribbbleListCommentsForOneShotRequest
 
